@@ -176,6 +176,18 @@ function Index() {
           </div>
         </div>
       </section>
+            {/* WHAT IS */}
+      <section className="px-5 pb-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-semibold">What is fusioniuApi?</h2>
+          <p className="mt-3 text-muted-foreground">
+            fusioniuApi is a developer API that generates UPI payment QR codes and verifies
+            payments by matching the UTR or transaction ID in a Gmail inbox. It works with
+            plain GET requests and returns JSON. Create an account, generate an API key, and
+            call two endpoints: genqr and check.
+          </p>
+        </div>
+      </section>
     </SiteLayout>
   );
 }
