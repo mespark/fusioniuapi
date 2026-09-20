@@ -15,7 +15,7 @@ export const Route = createFileRoute("/docs")({
   component: Docs,
 });
 
-const BASE = "https://fusioniuapi.vercel.app";
+const BASE = "https://fusioniuapi.mespark.in";
 
 function Docs() {
   const [lang, setLang] = useState<"curl" | "python" | "js" | "html">("curl");
