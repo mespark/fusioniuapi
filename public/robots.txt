@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /keys
+Disallow: /api/
+
+Sitemap: https://fusioniuapi.mespark.in/sitemap.xml
