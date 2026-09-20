@@ -70,6 +70,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" },
     ],
+    export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  head: () => ({
+    meta: [
+      { charSet: "utf-8" },
+      ... (yahan aapki purani meta lines, jaisa hai waisa) ...
+    ],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      ... (purani links lines) ...
+    ],
+    scripts: [                                    // <-- yahan se aapka naya block shuru
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "fusioniuApi",
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "Web",
+          url: "https://fusioniuapi.mespark.in",
+          description: "UPI QR code generation and Gmail-based payment verification API.",
+          author: { "@type": "Person", name: "mespark", url: "https://github.com/mespark" },
+        }),
+      },
+    ],                                            // <-- yahan tak
+  }),
+  shellComponent: RootShell,
+  component: RootComponent,
+  
   }),
   shellComponent: RootShell,
   component: RootComponent,
