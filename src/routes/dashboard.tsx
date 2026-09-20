@@ -6,7 +6,7 @@ import { QrCode, ShieldCheck, BookOpen, MessageCircle, Mail, Sparkles, Activity,
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis, PieChart, Pie, Cell, Legend } from "recharts";
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "Dashboard · fusioniuApi" }] }),
+  head: () => ({ meta: [{ title: "Dashboard · fusioniuApi" }, { name: "robots", content: "noindex" }] }),
   component: Dashboard,
 });
 
