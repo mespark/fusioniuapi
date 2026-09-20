@@ -6,7 +6,7 @@ import { Shield, Trash2, Ban, CheckCircle2, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/admin")({
-  head: () => ({ meta: [{ title: "Admin · fusioniuApi" }] }),
+  head: () => ({ meta: [{ title: "Admin · fusioniuApi" }, { name: "robots", content: "noindex" }] }),
   component: AdminPage,
 });
 
