@@ -6,7 +6,7 @@ import { Key, Plus, Copy, Check, Trash2, Loader2, ShieldAlert } from "lucide-rea
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/keys")({
-  head: () => ({ meta: [{ title: "API Keys · fusioniuApi" }] }),
+  head: () => ({ meta: [{ title: "API Keys · fusioniuApi" }, { name: "robots", content: "noindex" }] }),
   component: KeysPage,
 });
 
