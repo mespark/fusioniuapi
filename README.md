@@ -2,13 +2,13 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,100:8b5cf6&height=200&section=header&text=fusioniuApi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=UPI%20QR%20%2B%20Payment%20Verification%20API&descAlignY=58&descSize=18" width="100%"/>
 
-<a href="https://fusioniuapi.vercel.app">
+<a href="https://fusioniuapi.mespark.in">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=Generate+UPI+QR+Codes+Instantly;Verify+Payments+from+Your+Inbox;Built+with+TanStack+Start+%2B+Supabase" alt="Typing SVG" />
 </a>
 
 <br/>
 
-[![Live](https://img.shields.io/badge/Live-fusioniuapi.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://fusioniuapi.vercel.app)
+[![Live](https://img.shields.io/badge/Live-fusioniuapi.mespark.in-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://fusioniuapi.mespark.in)
 [![License: MIT](https://img.shields.io/badge/License-MIT-8b5cf6?style=for-the-badge)](./LICENSE)
 [![Made by](https://img.shields.io/badge/Made%20by-mespark-ff69b4?style=for-the-badge&logo=github)](https://github.com/mespark)
 
