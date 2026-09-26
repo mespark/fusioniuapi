@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import sparkLogo from "@/assets/spark-logo.png";
-import { MapPin, GraduationCap, Send, Code2, Shield, Terminal, Bot } from "lucide-react";
+import { MapPin, Mail, Code2, Shield, Terminal, Bot } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About the Developer — Spark (Ravi Yadav) · fusioniuApi" },
-      { name: "description", content: "Meet Spark (Ravi Yadav) — the developer behind fusioniuApi. Class 12 PCM graduate, JEE aspirant, web & cybersecurity enthusiast." },
+      { name: "description", content: "Meet Spark (Ravi Yadav) — the developer behind fusioniuApi. Web development, cybersecurity, Linux, and smart bots." },
       { property: "og:title", content: "About Spark — Developer of fusioniuApi" },
       { property: "og:description", content: "Builder of fusioniuApi. Web, cybersecurity, Linux, and bots." },
     ],
@@ -35,7 +35,15 @@ function About() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Hey, I'm <span className="text-primary glow-text">Spark</span>
+              Hey, I'm{" "}
+              <a
+                href="https://mespark.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary glow-text hover:underline"
+              >
+                Spark
+              </a>
             </h1>
             <p className="mt-3 text-muted-foreground">aka Ravi Yadav · Developer of fusioniuApi</p>
           </div>
@@ -43,28 +51,19 @@ function About() {
           <div className="card-3d rounded-2xl p-8 md:p-10">
             <h2 className="text-2xl font-bold mb-4">About Me</h2>
             <p className="text-muted-foreground leading-relaxed">
-              I'm a recent <span className="text-foreground font-medium">Class 12 PCM graduate</span> currently preparing for <span className="text-foreground font-medium">JEE</span>.
-              I have a strong passion for technology and creativity, with hands-on experience in building web projects,
-              exploring cybersecurity, working with Linux, and developing smart bots that solve real problems.
+              I'm a developer and cybersecurity enthusiast with hands-on experience building web projects,
+              exploring security research, working with Linux, and creating smart bots that solve real-world problems.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              I enjoy learning independently through coding, experimentation, and continuous improvement.
-              My goal is to become a skilled developer and cybersecurity expert — creating secure and impactful
-              digital solutions while growing consistently in both knowledge and discipline.
+              I believe in learning by building — through coding, experimentation, and continuous iteration.
+              My focus is on creating secure, reliable, and impactful digital solutions while growing steadily
+              in both knowledge and craft.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-4 mt-8">
               <div className="p-4 rounded-xl border border-border/60 bg-card/40">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1"><MapPin className="w-3.5 h-3.5" /> From</div>
                 <div className="font-semibold">Gurgaon</div>
-              </div>
-              <div className="p-4 rounded-xl border border-border/60 bg-card/40">
-                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1"><GraduationCap className="w-3.5 h-3.5" /> Profession</div>
-                <div className="font-semibold">Student / JEE Aspirant</div>
-              </div>
-              <div className="p-4 rounded-xl border border-border/60 bg-card/40">
-                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1"><GraduationCap className="w-3.5 h-3.5" /> Class</div>
-                <div className="font-semibold">12 PCM Graduate</div>
               </div>
             </div>
 
@@ -79,8 +78,8 @@ function About() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-3">
-              <a href="https://t.me/btwspark" target="_blank" rel="noreferrer" className="btn-3d px-6 py-3 rounded-xl font-semibold flex items-center gap-2">
-                <Send className="w-4 h-4" /> Telegram @btwspark
+              <a href="mailto:contact@mespark.in" className="btn-3d px-6 py-3 rounded-xl font-semibold flex items-center gap-2">
+                <Mail className="w-4 h-4" /> contact@mespark.in
               </a>
             </div>
           </div>
