@@ -118,7 +118,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <div>
             <h4 className="font-semibold mb-3 text-sm">Developer</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Spark · <a href="https://t.me/btwspark" target="_blank" className="text-primary hover:underline">@btwspark</a></li>
+              <li><a href="https://mespark.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Spark</a> aka Ravi Yadav</li>
               <li><a href="mailto:fusioniu2026@gmail.com" className="hover:text-primary">fusioniu2026@gmail.com</a></li>
             </ul>
           </div>
