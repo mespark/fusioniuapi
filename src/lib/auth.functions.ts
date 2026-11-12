@@ -14,7 +14,7 @@ function hashCode(code: string) {
 }
 
 export const requestSignupOtp = createServerFn({ method: "POST" })
-  .inputValidator((d: unknown) => EmailSchema.parse(d))
+  .validator((d: unknown) => EmailSchema.parse(d))
   .handler(async ({ data }) => {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { sendOtpEmail } = await import("@/lib/email.server");
@@ -57,7 +57,7 @@ export const requestSignupOtp = createServerFn({ method: "POST" })
   });
 
 export const verifyOtpAndCreateAccount = createServerFn({ method: "POST" })
-  .inputValidator((d: unknown) => VerifySchema.parse(d))
+  .validator((d: unknown) => VerifySchema.parse(d))
   .handler(async ({ data }) => {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { data: rows, error } = await supabaseAdmin
